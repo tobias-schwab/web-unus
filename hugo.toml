@@ -4,7 +4,6 @@ baseURL = "https://tobias-schwab.github.io/web-unus/"
 theme = "LoveIt"
 # themes directory
 # 主题目录
-themesDir = "../.."
 
 # website title
 # 网站标题

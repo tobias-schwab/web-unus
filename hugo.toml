@@ -1,5 +1,4 @@
 baseURL = "https://tobias-schwab.github.io/web-unus/"
-title = "Tobias Schwab"
 # theme
 # 主题
 theme = "LoveIt"
@@ -9,7 +8,7 @@ themesDir = "../.."
 
 # website title
 # 网站标题
-title = "LoveIt"
+title = "Tobias"
 
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
 # 设置默认的语言 ["en", "zh-cn", "fr", "pl", ...]

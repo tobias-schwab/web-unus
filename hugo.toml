@@ -65,14 +65,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # 当您将鼠标悬停在此菜单链接上时, 将显示标题
     title = ""
   [[menu.main]]
-    weight = 2
-    identifier = "tags"
-    pre = ""
-    post = ""
-    name = "Tags"
-    url = "/tags/"
-    title = ""
-  [[menu.main]]
     weight = 3
     identifier = "categories"
     pre = ""
@@ -87,7 +79,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
   # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
-  gitRepo = "https://github.com/dillonzq/LoveIt"
+  gitRepo = "https://github.com/tobias-schwab/web-unus"
   # which hash function used for SRI, when empty, no SRI is used
   # ["sha256", "sha384", "sha512", "md5"]
   # 哪种哈希函数用来 SRI, 为空时表示不使用 SRI
@@ -125,46 +117,22 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # Header title config
     # 页面头部导航栏标题配置
     [params.header.title]
-      # URL of the LOGO
-      # LOGO 的 URL
-      logo = ""
-      # title name
-      # 标题名称
+      logo = "/images/usb-screw-logo.png"
       name = "Tobias' Occasional"
-      # you can add extra information before the name (HTML format is supported), such as icons
-      # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
-      pre = "<i class='far fa-kiss-wink-heart' aria-hidden='true'></i>"
-      # you can add extra information after the name (HTML format is supported), such as icons
-      # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
+      pre = ""
       post = ""
-      # whether to use typeit animation for title name
-      # 是否为标题显示打字机动画
       typeit = false
 
   # Footer config
   # 页面底部信息配置
   [params.footer]
-    enable = true
-    # Custom content (HTML format is supported)
-    # 自定义内容 (支持 HTML 格式)
+    enable = false
     custom = ""
-    # whether to show Hugo and theme info
-    # 是否显示 Hugo 和主题信息
     hugo = true
-    # whether to show copyright info
-    # 是否显示版权信息
     copyright = true
-    # whether to show the author
-    # 是否显示作者
     author = true
-    # site creation time
-    # 网站创立年份
     since = 2019
-    # ICP info only in China (HTML format is supported)
-    # ICP 备案信息，仅在中国使用 (支持 HTML 格式)
     icp = ""
-    # license info (HTML format is supported)
-    # 许可协议信息 (支持 HTML 格式)
     license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
   # Section (all posts) page config
@@ -286,7 +254,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       title = "Tobias"
       # subtitle shown in home page (HTML format is supported)
       # 主页显示的网站副标题 (允许 HTML 格式)
-      subtitle = "An attempt to document the results of my incessant project/building compulsion."
+      subtitle = "An attempt to document the results of my incessant tinkering compulsion."
       # whether to use typeit animation for subtitle
       # 是否为副标题显示打字机动画
       typeit = true
@@ -306,107 +274,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # Social config in home page
   # 主页的社交信息设置
   [params.social]
-    GitHub = ""
-    Linkedin = ""
-    X = ""
-    Instagram = ""
-    Facebook = ""
-    Telegram = ""
-    Medium = ""
-    Gitlab = ""
-    Youtubelegacy = ""
-    Youtubecustom = ""
-    Youtubechannel = ""
-    Tumblr = ""
-    Quora = ""
-    Keybase = ""
-    Pinterest = ""
-    Reddit = ""
-    Codepen = ""
-    FreeCodeCamp = ""
-    Bitbucket = ""
-    Stackoverflow = ""
-    Weibo = ""
-    Odnoklassniki = ""
-    VK = ""
-    Flickr = ""
-    Xing = ""
-    Snapchat = ""
-    Soundcloud = ""
-    Spotify = ""
-    Bandcamp = ""
-    Paypal = ""
-    Fivehundredpx = ""
-    Mix = ""
-    Goodreads = ""
-    Lastfm = ""
-    Foursquare = ""
-    Hackernews = ""
-    Kickstarter = ""
-    Patreon = ""
-    Steam = ""
-    Twitch = ""
-    Strava = ""
-    Skype = ""
-    Whatsapp = ""
-    Zhihu = ""
-    Douban = ""
-    Angellist = ""
-    Slidershare = ""
-    Jsfiddle = ""
-    Deviantart = ""
-    Behance = ""
-    Dribbble = ""
-    Wordpress = ""
-    Vine = ""
-    Googlescholar = ""
-    Researchgate = ""
-    Mastodon = ""
-    Thingiverse = ""
-    Devto = ""
-    Gitea = ""
-    XMPP = ""
-    Matrix = ""
-    Bilibili = ""
-    Discord = ""
-    DiscordInvite = ""
-    Lichess = ""
-    ORCID = ""
-    Pleroma = ""
-    Kaggle = ""
-    MediaWiki = ""
-    Plume = ""
-    HackTheBox = ""
-    RootMe= ""
-    Malt = ""
-    TikTok = ""
-    TryHackMe = ""
-    Codeberg = ""
-    HuggingFace = ""
-    Threads = ""
-    LeetCode = ""
-    LeetCodeCN = ""
-    Bluesky = ""
-    Email = ""
-    RSS = ""
-
-  # Page global config
-  # 文章页面全局配置
-  [params.page]
-    # whether to hide a page from home page
-    # 是否在主页隐藏一篇文章
-    hiddenFromHomePage = false
-    # whether to hide a page from search results
-    # 是否在搜索结果中隐藏一篇文章
-    hiddenFromSearch = false
-    # whether to enable twemoji
-    # 是否使用 twemoji
-    twemoji = false
-    # whether to enable lightgallery
-    # 是否使用 lightgallery
-    lightgallery = false
-    # whether to enable the ruby extended syntax
-    # 是否使用 ruby 扩展语法
+    GitHub = "tobias-schwab"
+    Linkedin = "tobias-p-schwab/"
+    # Page config
+    # 页面配置
+    [params.page]
     ruby = true
     # whether to enable the fraction extended syntax
     # 是否使用 fraction 扩展语法
@@ -854,7 +726,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         name = "Collections"
         url = "/categories/"
         title = ""
-      [[languages.en.menu.main]]
+[[languages.en.menu.main]]
         weight = 5
         identifier = "about"
         pre = ""
@@ -862,14 +734,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         name = "About"
         url = "/about/"
         title = ""
-      [[languages.en.menu.main]]
-        weight = 6
-        identifier = "github"
-        pre = "<i class='fab fa-github' aria-hidden='true'></i>"
-        post = ""
-        name = ""
-        url = "https://github.com/dillonzq/LoveIt"
-        title = "GitHub"
     [languages.en.params]
       [languages.en.params.search]
         enable = true
@@ -889,118 +753,12 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         [languages.en.params.home.profile]
           enable = true
           gravatarEmail = ""
-          avatarURL = "/images/avatar.png"
-          title = ""
-          subtitle = "A Clean, Elegant but Advanced Hugo Theme"
+          avatarURL = "/images/tobias_self4.jpg"
+          title = "Tobias"
+          subtitle = "An attempt to document the results of my incessant tinkering compulsion."
           typeit = true
           social = true
           disclaimer = ""
       [languages.en.params.social]
-        GitHub = "xxxx"
-        X = "xxxx"
-        Linkedin = "xxxx"
-        Instagram = "xxxx"
-        Facebook = "xxxx"
-        Telegram = "xxxx"
-        Youtubelegacy = "xxxx"
-        HuggingFace = "xxxx"
-        LeetCode = "xxxx"
-        Threads = "xxxx"
-        Phone = "555-555-555"
-        Email = "xxxx@xxxx.com"
-        RSS = true
-        [languages.en.params.social.Mastodon]
-          id = "@xxxx"
-          prefix = "https://mastodon.technology/"
-
-  [languages.zh-cn]
-    weight = 2
-    languageCode = "zh-CN"
-    languageName = "简体中文"
-    hasCJKLanguage = true
-    copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
-    [languages.zh-cn.menu]
-      [[languages.zh-cn.menu.main]]
-        weight = 1
-        identifier = "posts"
-        pre = ""
-        post = ""
-        name = "所有文章"
-        url = "/posts/"
-        title = ""
-      [[languages.zh-cn.menu.main]]
-        weight = 2
-        identifier = "tags"
-        pre = ""
-        post = ""
-        name = "标签"
-        url = "/tags/"
-        title = ""
-      [[languages.zh-cn.menu.main]]
-        weight = 3
-        identifier = "categories"
-        pre = ""
-        post = ""
-        name = "分类"
-        url = "/categories/"
-        title = ""
-      [[languages.zh-cn.menu.main]]
-        weight = 4
-        identifier = "documentation"
-        pre = ""
-        name = "文档"
-        url = "/categories/documentation/"
-        title = ""
-      [[languages.zh-cn.menu.main]]
-        weight = 5
-        identifier = "about"
-        pre = ""
-        post = ""
-        name = "关于"
-        url = "/about/"
-        title = ""
-      [[languages.zh-cn.menu.main]]
-        weight = 6
-        identifier = "github"
-        pre = "<i class='fab fa-github' aria-hidden='true'></i>"
-        post = ""
-        name = ""
-        url = "https://github.com/dillonzq/LoveIt"
-        title = "GitHub"
-    [languages.zh-cn.params]
-      [languages.zh-cn.params.search]
-        enable = true
-        type = "algolia"
-        contentLength = 4000
-        placeholder = ""
-        maxResultLength = 10
-        snippetLength = 50
-        highlightTag = "em"
-        absoluteURL = false
-        [languages.zh-cn.params.search.algolia]
-          index = "index"
-          appID = "GZT24PWKNT"
-          searchKey = "634ab679e825b815de2663de38908f9d"
-      [languages.zh-cn.params.home]
-        rss = 10
-        [languages.zh-cn.params.home.profile]
-          enable = true
-          gravatarEmail = ""
-          avatarURL = "/images/avatar.png"
-          title = ""
-          subtitle = "一个简洁、优雅且高效的 Hugo 主题"
-          typeit = true
-          social = true
-          disclaimer = ""
-      [languages.zh-cn.params.social]
-        GitHub = "xxxx"
-        Weibo = "xxxx"
-        Steam = "xxxx"
-        Zhihu = "xxxx"
-        Douban = "xxxx"
-        Devto = "xxxx"
-        Bilibili = "xxxx"
-        LeetCodeCN = "xxxx"
-        Email = "xxxx@xxxx.com"
-        Phone = "555-555-555"
-        RSS = true
+        GitHub = "tobias-schwab"
+        Linkedin = "tobias-p-schwab/"

@@ -5,3 +5,24 @@
   width: 180px !important;
   height: 180px !important;
 }
+
+// Reserve vertical space for the home subtitle so the TypeIt
+// animation doesn't shift the page content below it as the text
+// types itself out. `.home-subtitle-spacer` is an invisible copy
+// of the final text (see layouts/_partials/home/profile.html)
+// that sets the real height in-flow; the TypeIt element is
+// overlaid on top of it and never affects layout.
+.home-subtitle {
+  position: relative;
+}
+
+.home-subtitle-spacer {
+  visibility: hidden;
+}
+
+.home-subtitle .typeit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}

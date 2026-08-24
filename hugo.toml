@@ -101,7 +101,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       enable = true
       avatarURL = "/images/tobias_self4.jpg"
       title = "Tobias"
-      subtitle = "An attempt to document the results of my incessant tinkering compulsion."
+      subtitle = ["A work in progress: this site, my projects, and me.", "An attempt to document the results of my incessant tinkering."]
       typeit = true
       social = true
     [params.home.posts]
@@ -200,3 +200,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   page = ["HTML", "MarkDown"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
+
+# only keep the "category" taxonomy — this removes the tags
+# taxonomy/system entirely (Hugo's tag default is dropped once
+# taxonomies is defined explicitly)
+[taxonomies]
+  category = "categories"

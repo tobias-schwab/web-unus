@@ -1,0 +1,17 @@
+{{- /*
+  Interactive STL viewer shortcode.
+  Usage: {{< stl-viewer src="model.stl" height="360px" >}}
+  `src` should be the filename of an STL page resource in the same bundle.
+*/ -}}
+{{- $src := .Get "src" -}}
+{{- $height := .Get "height" | default "360px" -}}
+{{- with $src -}}
+  {{- $url := . -}}
+  {{- with $.Page.Resources.GetMatch . -}}
+    {{- $url = .RelPermalink -}}
+  {{- end -}}
+  <div class="stl-viewer" data-stl="{{ $url }}" style="width: 100%; height: {{ $height }}; max-width: 480px; border-radius: .5rem; background: rgba(127,127,127,.08); position: relative; touch-action: none; cursor: grab;">
+    <div class="stl-viewer-loading" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: .85rem; opacity: .6;">Loading 3D model…</div>
+  </div>
+  <script type="module" src="/js/stl-viewer.js"></script>
+{{- end -}}

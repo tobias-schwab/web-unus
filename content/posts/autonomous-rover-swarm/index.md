@@ -81,7 +81,7 @@ This kept things simple for what felt like endless debugging… To be clear I ha
 
 **[⬇ Download tower.stl](tower.stl)**
 
-I utilized the modular design of the central tower when adding the ultrasonic sensor. There is a clear design issue with adding an additional sensor anywhere but the tower: blocking part of the camera's FOV. I decided to use the most basic HC-SR04 that I had laying around because it operates at 5V (like the servos and motor controller) and can operate at 4 meters (plenty). The goal: ultrasonic sensor panning concurrently but independently from ESP32 camera operation. Below is the part I designed: the oval ends slot into the tower, the body supports itself on the tower's side, and the servo locks into place upside down. Next, the servo-sensor connection is straight forward.
+I utilized the modular design of the central tower when adding the ultrasonic sensor. There is a clear design issue with adding an additional sensor anywhere but the tower: blocking part of the camera's FOV. I decided to use the most basic HC-SR04 that I had laying around because it operates at 5V (like the servos and motor controller) and can operate at 4 meters (plenty). The goal: ultrasonic sensor panning concurrently but independently from ESP32 camera operation. Below is the part I designed: the oval ends slot into the tower, the body supports itself on the tower's side, and the servo locks into place upside down. Next, the servo-sensor connection is straightforward.
 
 <img src="ultrasens1.png" alt="Ultrasonic sensor mount, designed part" style="width: 30%; min-width: 200px; display: block;">
 
@@ -91,7 +91,7 @@ I utilized the modular design of the central tower when adding the ultrasonic se
 
 **[⬇ Download ultrasonicmount.stl](ultrasonicmount.stl)**
 
-How the sensor works is straight forward: The trigger pin receives a short 10 µs pulse → the module sends out eight 40 kHz ultrasonic sound bursts → the sound waves bounce off an obstacle and return to the receiver → the echo pin goes high, and the length of the pulse measures the total travel time → distance is calculated using:
+How the sensor works is straightforward: The trigger pin receives a short 10 µs pulse → the module sends out eight 40 kHz ultrasonic sound bursts → the sound waves bounce off an obstacle and return to the receiver → the echo pin goes high, and the length of the pulse measures the total travel time → distance is calculated using:
 
 **Distance = (Time × Speed of Sound) ÷ 2**
 

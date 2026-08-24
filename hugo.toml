@@ -101,7 +101,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       enable = true
       avatarURL = "/images/tobias_self4.jpg"
       title = "Tobias"
-      subtitle = ["A work in progress: this site, my projects, and me.", "An attempt to document the results of my incessant tinkering."]
+      subtitle = ["A work in progress: this site, my projects, and me.", "Here you'll find an attempt to document the results of my incessant tinkering."]
       typeit = true
       social = true
     [params.home.posts]
@@ -146,7 +146,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       enable = false
 
   [params.typeit]
-    speed = 100
+    speed = 80
     cursorSpeed = 1000
     cursorChar = "|"
     duration = -1

@@ -9,7 +9,7 @@ featuredImage: "cover.png"
 lightgallery: true
 ---
 
-Swarm of low-cost rovers, each about the size of a book, collectively able to search and track a target. Two operating modes:
+Swarm of low-cost rovers, each about the size of a book, collectively able to search and track a target. Two operating modes: Centralized and Decentralized. Here's how they both work.
 
 <!--more-->
 

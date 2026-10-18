@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }}</title>
+</head>
+<body>
+    {{- $pdf := "files/project-portfolio-tobias-schwab.pdf" | relURL -}}
+    <div class="portfolio-bar">
+        <span class="portfolio-title">{{ .Title }}</span>
+        <a href="{{ $pdf }}" download>Download PDF</a>
+    </div>
+
+    <div class="portfolio-embed">
+        <object data="{{ $pdf }}" type="application/pdf">
+            <p class="portfolio-fallback">
+                Your browser can't display the PDF inline.
+                <a href="{{ $pdf }}">Download it here</a> instead.
+            </p>
+        </object>
+    </div>
+
+    <style>
+        :root {
+            color-scheme: light dark;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: #f4f4f4;
+            color: #222;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #161616;
+                color: #eee;
+            }
+        }
+
+        .portfolio-bar {
+            flex: 0 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .85rem 1.5rem;
+        }
+
+        .portfolio-title {
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        .portfolio-bar a {
+            color: inherit;
+            text-decoration: none;
+            font-weight: 600;
+            opacity: .8;
+        }
+
+        .portfolio-bar a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        .portfolio-embed {
+            flex: 1 1 auto;
+            min-height: 0;
+            padding: 0 1rem 1rem;
+        }
+
+        .portfolio-embed object {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .portfolio-fallback {
+            padding: 2rem;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>

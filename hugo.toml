@@ -31,6 +31,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     name = "Collections"
     url = "/categories/"
   [[menu.main]]
+    weight = 4
+    identifier = "portfolio"
+    name = "Portfolio"
+    url = "/portfolio/"
+  [[menu.main]]
     weight = 5
     identifier = "about"
     name = "About"

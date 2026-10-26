@@ -6,6 +6,27 @@
   height: 180px !important;
 }
 
+// Header logo is 1.5em by default in the theme; 50% larger than that.
+header .logo {
+  min-height: 2.25em;
+  height: 2.25em;
+  vertical-align: middle;
+}
+
+// The logo is black line art on a transparent background, so in dark
+// mode it would nearly vanish against the dark header. Invert it so
+// the lines render light-on-dark instead.
+[theme=dark] header .logo {
+  filter: invert(1);
+}
+
+// Vertically center the header title text against the (larger) logo.
+.header-title a {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
 // Reserve vertical space for the home subtitle so the TypeIt
 // animation doesn't shift the page content below it as the text
 // types itself out. `.home-subtitle-spacer` is an invisible copy

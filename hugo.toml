@@ -106,8 +106,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       enable = true
       avatarURL = "/images/tobias_self4.jpg"
       title = ""
-      subtitle =["A work in progress: this site, my projects, and myself.", "Here you'll find an attempt to document the results of incessant tinkering."]
-      typeit = true
+      subtitle = "A work in progress: this site, my projects, and myself.<br>Here you'll find an attempt to document the results of incessant tinkering."
+      typeit = false
       social = true
     [params.home.posts]
       enable = true
